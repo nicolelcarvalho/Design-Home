@@ -1,0 +1,39 @@
+{
+  "name": "design-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolelcarvalho/Design-Home.git"
+  },
+  "author": "Nicole Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolelcarvalho/Design-Home/issues"
+  },
+  "homepage": "https://github.com/nicolelcarvalho/Design-Home#readme",
+  "dependencies": {
+    "aws-sdk": "^2.141.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "clarifai": "^2.4.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.3.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "handlebars": "^4.0.11",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.4.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "punkapi-lib": "^2.2.0",
+    "sequelize": "^4.15.2"
+  }
+}
