@@ -29,11 +29,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(fileUpload());
+// app.set('views', './views');
+// app.use(express.static('./public'));
+// app.engine('html', require('ejs').renderFile);
+
 
 app.use(methodOverride("_method"));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
 
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
@@ -48,6 +50,7 @@ app.use(express.static("public"));
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
+app.listen(process.env.PORT || 3000);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
